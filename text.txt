@@ -1,0 +1,25 @@
+Method parameters may have default values specified, and methods may accept
+arbitrary numbers of arguments.
+As in most languages, expressions in Ruby are usually built out of values and operators.
+For the most part, Ruby’s operators will be familiar to anyone who knows C, Java,
+JavaScript, or any similar programming language.
+We saw previously that methods whose names end with = can be invoked by assignment
+expressions. Ruby methods can also end with a question mark or an exclamation point.
+A question mark is used to mark predicates—methods that return a Boolean value. For
+example, the Array and Hash classes both define methods named empty? that test
+whether the data structure has any elements. An exclamation mark at the end of a
+method name is used to indicate that caution is required with the use of the method.
+A number of core Ruby classes define pairs of methods with the same name, except
+that one ends with an exclamation mark and one does not.
+Usually, the method without the exclamation mark returns a modified copy of the object it is invoked on, and the
+one with the exclamation mark is a mutator method that alters the object in place. The
+Array class, for example, defines methods sort and sort!.
+In addition to these punctuation characters at the end of method names, you’ll notice
+punctuation characters at the start of Ruby variable names: global variables are prefixed
+with $, instance variables are prefixed with @, and class variables are prefixed with @@.
+These prefixes can take a little getting used to, but after a while you may come to
+appreciate the fact that the prefix tells you the scope of the variable. The prefixes are
+required in order to disambiguate Ruby’s very flexible grammar. 
+One way to think of
+variable prefixes is that they are one price we pay for being able to omit parentheses
+around method invocations.
